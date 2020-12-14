@@ -1,0 +1,14 @@
+Autor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+Fio, Facult, Spec, Group, Year {
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+    font-family: 'Gardens CM';
+}

@@ -1,0 +1,464 @@
+@font-face {
+	font-family: 'Typesauce'; 
+	src: url(../fonts/19104.ttf); 
+
+}
+
+@font-face {
+	font-family: 'Gardens CM'; 
+	src: url(../fonts/20011.ttf); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Gardens CM';
+}
+
+
+span{
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+header {
+    padding: 15px 0;
+    background-color: #857350;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    transition: .3s;
+    font-size: 18px;
+    
+}
+
+.navigation a.active {
+    background-color: #745938;
+}
+
+.navigation a:hover {
+    background-color: #745938;
+}
+
+.andreydrew {
+    display: flex;
+    width: 100%;
+}
+
+.andreydrew-logo, .andreydrew-facades {
+    height: 500px;
+    width: 50%;
+    
+}
+
+.andreydrew-facades {
+    background: url('../img/facades.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.andreydrew-facades-text {
+    width: 100%;
+    background-color: rgba(225, 231, 221, .6);
+    height: 280px;
+    font-size: 40px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Typesauce';
+    color: #362a1a;
+}
+
+.andreydrew-logo {
+    background: url('../img/logo.png') no-repeat center/cover;
+}
+
+
+
+.description {
+    padding: 80px 0;
+    background: #c79e64;
+}
+
+.description p {
+    text-align: center;
+    font-size: 28px;
+}
+
+.portfolio {
+    background-color: #ffeaa7;
+    width: 100%;
+    overflow: hidden;
+    padding: 6px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider div {
+    position: relative;
+    overflow: hidden;
+    height: 305px;
+}
+
+.slider img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.portfolio .slider .slick-next {
+    right: 40px ;
+}
+
+.portfolio .slider .slick-prev {
+    z-index: 1;
+    left: 40px;
+}
+
+.array {
+    background: url('../img/Дерево.jpg') no-repeat center/cover;
+    padding: 40px 0;
+}
+
+.array-info {
+    padding: 30px 40px;
+    border-radius: 40px;
+    background-color: rgba(232, 207, 158, 0.5);
+}
+
+.array-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.array ul {
+    list-style: none;
+}
+
+.array ul li {
+    font-size: 24px;
+}
+
+.array ul li:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    width: 50%;
+    position: relative;
+}
+
+.work-item img {
+    display: block;
+    width: 100%;
+}
+
+.work-item-label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(66, 34, 7, .4);
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    padding: 100px 0;
+}
+
+.price .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price-item {
+    width: 40%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+.price-item ul {
+    list-style: none;
+}
+
+.price-item h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.price-item ul li {
+    line-height: 30px;
+}
+
+.form-calculate {
+    padding-bottom: 80px;
+}
+
+/*form*/
+
+form {
+    border: 4px solid #857350;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+form .form-line {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    justify-content: space-between;
+
+}
+
+form .form-line input {
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid #857350;
+    padding: 6px 10px;
+    font-size: 18px;
+    color: #857350;
+}
+
+form .form-line input[type=button] {
+    background-color: transparent;
+    border: 2px solid #857350;
+    transition: 0.3s;
+
+    
+}
+
+form .form-line input[type=button]:hover {
+    background-color: #857350;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button[type=submit] {
+    display: block;
+    color: #857350;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #857350;
+    transition: .3s;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+form button[type=submit]:hover {
+    background-color: #857350;
+    color: #fff;
+    cursor: pointer;
+}
+
+form h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.form-contact {
+    background: url('../img/contact.jpg') no-repeat center/cover;
+}
+
+.form-contact form {
+    border: 0px solid #000;
+    background-color: rgba(54, 42, 26, 0.8);
+}
+
+.form-contact form h4 {
+    color: #857350;
+    display: block;
+    width: 80%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px 20px;
+    border-radius: 30px;
+}
+
+.form-contact form .form-line input[type=button] {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #FFF;
+}
+
+.form-contact form button[type=submit]:hover {
+    background-color: #fff;
+    color: #857350;
+    cursor: pointer;
+}
+
+.form-contact .form-line input {
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #FFF;
+}
+
+.form-contact form button[type=submit] {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #FFF;
+    border-radius: 30px;
+}
+
+
+.form-contact {
+    padding: 120px 0;
+}
+
+
+textarea {
+    border: none;
+    border-left: 2px solid #fff;
+    resize: none;
+    height: 200px;
+    color: #fff;
+    padding: 6px 10px;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* Contacts */
+
+.contacts {
+    padding: 40px;
+}
+
+.contacts-desc {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #857350;
+    margin-bottom: 20px;
+}
+
+.contacts-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-line {
+    width: 20%;
+    min-width: 250px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #857350;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #857350;
+}
+
+footer {
+    background-color: #362A1A;
+    padding: 20px 10px;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+    .andreydrew {
+        flex-wrap: wrap;
+    }
+
+    .andreydrew-logo, .andreydrew-facades {
+        width: 100%;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .work-item {
+        width: 100%;
+    }
+
+    form {
+        padding: 30px 15px;
+    }
+
+    form h4 {
+        font-size: 20px;
+    }
+
+    form .form-line {
+        width: 95%;
+    }
+
+    .price-item {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .price-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .andreydrew-facades-text {
+        font-size: 24px;
+        height: 180px;
+    }
+
+    .andreydrew-logo, .andreydrew-facades {
+        width: 100%;
+        height: 320px;
+    }
+
+    .description p {
+        font-size: 18px;
+    }
+
+    header .navigation {
+        flex-wrap: wrap;
+    }
+
+    header .navigation a {
+        width: 100%;
+    }
+}
+
