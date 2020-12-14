@@ -460,5 +460,9 @@ footer {
     header .navigation a {
         width: 100%;
     }
+	
+    h3 .array-title {
+        font-size: 20px;
+    }
 }
 
